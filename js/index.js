@@ -11,7 +11,7 @@
 	var modals = document.querySelectorAll('.modal');
 	for(var i = 0; i < modals.length; i++) {
 		modals[i].classList.remove('show');
-	}
+	};
 	document.querySelector(chosenLink).classList.add('show');
 	
 }
