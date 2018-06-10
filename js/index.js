@@ -8,10 +8,14 @@
 	var chosenLink = this.getAttribute('href');
 	console.log(chosenLink);
 	
+	var modals = document.querySelectorAll('.modal');
+	for(var i = 0; i < modals.length; i++) {
+		modals[i].classList.remove('show');
+	}
 	document.querySelector(chosenLink).classList.add('show');
-}
 	
-	var modalLinks = document.querySelectorAll('.show-modal');
+}
+		var modalLinks = document.querySelectorAll('.show-modal');
 	
 	for(var i = 0; i < modalLinks.length; i++){
 		modalLinks[i].addEventListener('click', showModal);
